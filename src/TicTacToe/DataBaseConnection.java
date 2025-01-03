@@ -9,7 +9,8 @@ public class DataBaseConnection {
     private static final String PASSWORD = "";
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, USER, PASSWORD);
+        return DriverManager.getConnection(URL, USER, PASSWORD);  // returns a Connection object that represents the connection to the database.
+        // This Connection object is used to execute SQL queries and interact with the database.
     }
 
 }

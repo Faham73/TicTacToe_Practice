@@ -15,7 +15,9 @@ public class LoginUI {
     String username2 = "";
     boolean player1LoggedIn=false;
     public LoginUI() throws SQLException {
-        connection = DataBaseConnection.getConnection();
+        connection = DataBaseConnection.getConnection(); //represents the connection to the database.
+
+        // new Login page window
         JFrame loginFrame = new JFrame("LOG IN");
         loginFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         loginFrame.setSize(600, 600);
